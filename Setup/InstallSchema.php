@@ -116,6 +116,14 @@ class InstallSchema implements InstallSchemaInterface
         );
 
         $tableExperiusDonationProductDonations->addColumn(
+            'posted',
+            Table::TYPE_BOOLEAN,
+            null,
+            [],
+            'posted'
+        );
+        
+        $tableExperiusDonationProductDonations->addColumn(
             'created_at',
             Table::TYPE_TIMESTAMP,
             null,
