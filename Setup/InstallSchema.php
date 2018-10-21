@@ -119,7 +119,10 @@ class InstallSchema implements InstallSchemaInterface
             'posted',
             Table::TYPE_BOOLEAN,
             null,
-            [],
+            [
+                'nullable' => false,
+                'default' => false,
+            ],
             'posted'
         );
         
